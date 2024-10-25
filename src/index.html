@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="bg-green-500 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+              >SPhone</span
+            >
+          </a>
+          <div class="flex md:order-2">
+            <button
+              type="button"
+              data-collapse-toggle="navbar-search"
+              aria-controls="navbar-search"
+              aria-expanded="false"
+              class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <span class="sr-only">Search</span>
+            </button>
+            <div class="relative hidden md:block">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+                <span class="sr-only">Search icon</span>
+              </div>
+              <input
+                type="text"
+                id="search-navbar"
+                class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search..."
+              />
+            </div>
+            <button
+              data-collapse-toggle="navbar-search"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-search"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-search"
+          >
+            <div class="relative mt-3 md:hidden">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="search-navbar"
+                class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search..."
+              />
+            </div>
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+             
+              <li>
+                <a
+                  href="./index.html"
+                  class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Product</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./admin.html"
+                  class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Admin</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="content">
+      <div class="container">
+        <div class="card text-center">
+          <!-- Header -->
+          <div class="card-header myCardHeader m-6">
+            <div class="row">
+              <div class="col-md-6">
+                <h3
+                  class="text-left text-3xl text-primary font-weight-bold block"
+                >
+                  Danh sách điện thoại
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Body -->
+
+          <!-- Footer -->
+          <div class="card-footer myCardFooter">
+            <nav>
+              <ul
+                class="pagination justify-content-center"
+                id="ulPhanTrang"
+              ></ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body" style="width: full">
+      <div class="row">
+        <div class="col">
+          <div
+            class="input-group columns-2 p-5 bg-blue-300 flex"
+            style="width: 100%"
+          >
+            <div class="mt-2 mr-4">
+              <label class="">Tìm điện thoại theo loại: </label>
+            </div>
+            <div>
+              <select
+                class="form-control"
+                id="productType"
+                aria-label="Chọn loại điện thoại"
+                style="width: 100%"
+              >
+                <option value="">Tất cả</option>
+                <option value="samsung">Samsung</option>
+                <option value="iphone">iPhone</option>
+              </select>
+            </div>
+            <div style="padding-left: 65%">
+              <button
+                class="btn_GioHang p-3 pl-5 pr-5"
+                style="background-color: rgb(154, 94, 108); border-radius: 50px"
+                onclick="openCart()"
+              >
+                Giỏ Hàng
+              </button>
+            </div>
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="btnTimDT"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+          <!-- <div class="form-group p-2" style="width: 100%;">
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fa fa-briefcase"></i></span>
+                      </div>
+                  </div>
+                  <span class="sp-thongbao" id="tbChucVu"></span>
+              </div> -->
+        </div>
+      </div>
+    </div>
+    <section class="carousel">
+      <table
+        class="table table-bordered table-hover myTable"
+        style="width: 100%"
+      >
+        <thead class="text-primary bg-blue-500">
+          <tr>
+            <th>STT</th>
+            <th>Tên sản phẩm</th>
+            <th>Price</th>
+            <th>Screen</th>
+            <th>Black Camera</th>
+            <th>Front Camera</th>
+            <th>Image</th>
+            <th>Desc</th>
+            <th>Type</th>
+            <th>Active</th>
+          </tr>
+        </thead>
+        <tbody id="tableDanhSach">
+          <!-- Dữ liệu bảng sẽ được chèn vào đây -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Modal Giỏ hàng -->
+    <div id="cartModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <h3>Giỏ hàng</h3>
+        <table
+          class="table table-bordered table-hover myTable"
+          style="width: 100%"
+        >
+          <thead class="text-primary bg-blue-500">
+            <tr>
+              <th>STT</th>
+              <th>Tên sản phẩm</th>
+              <th>Price</th>
+              <th>Image</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Active</th>
+            </tr>
+          </thead>
+          <tbody id="cartTable"></tbody>
+        </table>
+        <div  class="card-footer myCardFooter pt-3">
+          <div class="bg-pink-400 flex h-10 w-52 rounded-2xl justify-items-center pt-2 mb-3 pl-3">
+            <h3>Tổng tiền: </h3>
+            <h3 id="totalCart"></h3>
+          </div>
+          <button
+            id="btnSell"
+            class="btn bg-orange-400 p-2"
+            style="border-radius: 50px"
+            onclick="btnCheckout()"
+          >
+            Thanh toán
+          </button>
+          <br />
+          <div class="btnDouble pt-3">
+            <button
+              class="btn bg-zinc-700 pr-5 pl-5 pb-2"
+              style="border-radius: 50px"
+              onclick="closeCart()"
+            >
+              Đóng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <!-- <div class="modal fade m-6 " id="myModal">
+      <div class="modal-dialog bg-red-300 rounded-lg p-8">
+        <div class="modal-content"> -->
+
+    <!-- <header class="head-form mb-0"> -->
+    <!-- <h2 id="header-title">Thêm Điện Thoại</h2> -->
+    <!-- </header> -->
+
+    <!-- Modal Header -->
+    <!-- 	<div class="modal-header">
+            <h4 class="modal-title" id="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div> -->
+
+    <!-- Modal body -->
+    <!-- <div class="modal-body">
+  
+            <form role="form" id="staffFrom">
+  
+              <div class="form-group p-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                  </div>
+                  <input type="text" name="sanPham" id="tensp" class="form-control input-sm"
+                    placeholder="Nhập tên sản phẩm">
+                </div>
+  
+                <span class="sp-thongbao" id="tbTKNV"></span>
+              </div>
+  
+              <div class="form-group p-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-address-book"></i></span>
+                  </div>
+                  <input type="name" name="type" id="img-hinh" class="form-control input-sm"
+                    placeholder="Nhập hình sản phẩm">
+                </div>
+                <span class="sp-thongbao" id="tbTen"></span>
+              </div>
+  
+              <div class="form-group p-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                  </div>
+                  <input type="email" name="price" id="price-gia" class="form-control input-sm"
+                    placeholder="Nhập giá sản phẩm">
+                </div>
+  
+                <span class="sp-thongbao" id="tbEmail"></span>
+              </div>
+              <div class="form-group p-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-key"></i></span>
+                  </div>
+                  <input type="text" name="desc" id="desc-moTa" class="form-control input-sm"
+                    placeholder="Mô tả">
+                </div>
+                <span class="sp-thongbao" id="tbMatKhau"></span>
+              </div>
+              <div class="form-group p-2">
+                <select class="form-control" id="chonSanPham">
+                  <option >Sản phẩm</option>
+                  <option value="Iphone">Iphone</option>
+                  <option value="Samsung">Samsung</option>
+                </select>
+              </div>
+            </form>
+          </div>
+  
+          <!-- Modal footer -->
+    <!-- <div class="modal-footer" id="modal-footer">
+            <button id="btnThemDT" type="button" onclick="addProduct()" class="btn btn-success bg-sky-500 font-medium text-white">Thêm điện thoại</button>
+          </div>  -->
+    <!--   
+        </div>
+      </div>
+    </div>   -->
+
+    <!-- AXIOS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+      integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- MY JS -->
+    <script type="module" src="./homeJS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

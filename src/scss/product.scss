@@ -1,0 +1,41 @@
+.modal {
+    display: none; /* Ẩn modal mặc định */
+    position: fixed; /* Đặt modal ở vị trí cố định */
+    z-index: 1000; /* Đặt z-index để đảm bảo modal ở trên */
+    left: 0;
+    top: 0;
+    width: 100%; /* Toàn bộ chiều rộng */
+    height: 100%; /* Toàn bộ chiều cao */
+    overflow: auto; /* Kéo lên/xuống */
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
+}
+
+.modal-content {
+    background-color: white; /* Nền của nội dung modal */
+    margin: 15% auto; /* Căn giữa */
+    padding: 20px; /* Padding cho nội dung */
+    border: 1px solid #888; /* Đường viền */
+    width: 50%; /* Chiều rộng của modal */
+    border-radius: 10px; /* Bo góc */
+}
+.btnDouble{
+    justify-content: end;
+}
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 2rem; /* Sử dụng rem để khoảng cách phù hợp với kích thước chữ */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 90vw; /* Sử dụng đơn vị vw (viewport width) để mục chiếm 90% chiều rộng màn hình */
+    max-width: 600px; /* Đặt giới hạn tối đa cho kích thước */
+    margin-right: 2rem; /* Khoảng cách giữa các mục cũng được thiết lập theo rem */
+}
+
+.carousel img {
+    width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng của mục carousel */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+}

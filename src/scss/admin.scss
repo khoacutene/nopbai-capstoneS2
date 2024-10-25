@@ -1,0 +1,193 @@
+/* Định dạng chung cho sản phẩm */
+.table {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+  font-weight: bold;
+}
+
+th, td {
+  border: 1px solid #0c0b0b;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Khoảng cách trên cho bảng */
+.carousel {
+  padding-top: 2%;
+}
+
+/* Nút xóa (delete) */
+.delete {
+  background-color: red;
+  padding: 8px 20px;
+  border-radius: 30px;
+  color: #fff;
+  will-change: box-shadow;
+  transition: box-shadow 0.3s ease-in-out; /* Thêm hiệu ứng transition để giảm reflow */
+}
+
+/* Nút chỉnh sửa (edit) */
+.btn_edit {
+  background-color: blue;
+  padding: 8px 20px;
+  border-radius: 30px;
+  color: #fff;
+  will-change: box-shadow;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Container cho phần thêm sản phẩm */
+.add_product {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Input tìm kiếm */
+.find_product {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 250px;
+  max-width: 100%;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.find_product:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Dropdown sắp xếp sản phẩm */
+.sapXep label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.sapXep select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.add_btn {
+  background-color: rgb(134, 237, 134);
+  padding: 5px 20px;
+  border-radius: 30px;
+  will-change: box-shadow;
+}
+
+
+
+/* Form thêm sản phẩm */
+.product_form {
+  display: none;
+  width: 35vw;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #e2d3d3;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  will-change: transform, opacity;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: linear-gradient(135deg, #7996a0, #cb6969);
+}
+
+.product_form h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-size: 12px;
+  color: #555;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Footer modal */
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-footer button {
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Nút Thêm mới */
+.btn_Them {
+  background-color: #87aad0;
+  margin-right: 10px;
+}
+
+/* Nút Cập nhật */
+.btn_CapNhat {
+  background-color: #4cac8f;
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+
+/* Nút Đóng */
+.btn_Dong {
+  background-color: #5c6160;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Custom select */
+.custom-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
